@@ -229,3 +229,16 @@ In this diagram, there are 22 48-port switches used to connect 500 computers in 
 ```
 
 Each switch is connected to 23 computers, and all three switches are connected to the router. The router provides Internet access to the computers in the Accounts department.
+
+
+### Limitations
+
+**Scalability:** The proposed solution may not be scalable in the long run if the number of computers in each department increases significantly. The 48-port switches may not be able to accommodate the additional devices, and additional switches or an upgrade to larger switches may be required.
+
+**Redundancy:** The proposed solution does not include any redundant components to ensure that the network remains operational in the event of a device failure. This could lead to network downtime and decreased reliability.
+
+**Security:** The proposed solution does not address security measures such as firewall protection, intrusion detection, and encryption. These measures should be implemented to protect the network from potential security threats.
+
+**Cost:** The cost of setting up and maintaining the network may be high due to the large number of devices and the leased line from the ISP. This could be a limitation for organizations with limited budget resources.
+
+**IP address management:** The proposed IP addressing scheme may not be efficient if the organization experiences significant growth and runs out of available IP addresses. In this case, the organization may need to implement a more complex addressing scheme or obtain additional IP addresses from the ISP.
