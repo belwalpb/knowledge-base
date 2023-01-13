@@ -40,3 +40,7 @@ The specific growth strategy used by ArrayList is to increase the size of the ar
 When you add an element to an ArrayList, the ArrayList will first check if there is any room left in the current array to store the new element. If there is, the element is added to the next available position in the array. If there is no room, a new array is created with the new size and all the elements of the current array are copied to it. Then the new element is added to the end of the new array.
 
 In general, this approach of periodically increasing the size of the array to be slightly larger than the current number of elements in the list allows the ArrayList to keep the average cost of adding an element to O(1) amortized performance.
+
+**2. LinkedList:** In Java, a LinkedList is implemented as a doubly-linked list. A doubly-linked list is a data structure in which each element, called a node, contains a reference to the previous and next elements in the list. The first and last elements in the list have special nodes, called sentinels, that do not contain actual data but are used to mark the beginning and end of the list.
+
+LinkedList class provides methods to add, remove, and access elements, as well as various other utility methods such as methods to check if the list is empty, to find the index of a given element, and to sort the elements.
