@@ -23,24 +23,19 @@ Advantages:
 10. boolean removeAll(Collection<?> c)
 
 
-#### List Interface in Java
+**The Java Collection Framework provides several important classes for storing and manipulating data, including:**
 
-The List interface in Java provides a way to store the ordered collection. It is a child interface of Collection. It is an ordered collection of objects in which duplicate values can be stored. Since List preserves the insertion order, it allows positional access and insertion of elements. 
+**1. ArrayList:** an implementation of a dynamic array, allowing for fast random access and insertion/deletion at the end.
 
-**Implementation of List Interface in Java:**
+**2. LinkedList:** an implementation of a doubly-linked list, allowing for fast insertion/deletion at any point in the list.
 
-**1. ArrayList:** It is the resizable-array implementation of the List interface. The `size`, `isEmpty`, `get`, `set`, `iterator`, and `listIterator` operations run in constant time.
+**3. HashMap:** an implementation of a hash table, allowing for fast access and insertion/deletion of key-value pairs.
 
-The `add` operation runs in amortized constant time, that is, adding n elements requires `O(n)` time.
+4. TreeMap: an implementation of a balanced binary tree, allowing for fast access and insertion/deletion of key-value pairs in a sorted order.
 
-In Java, an ArrayList grows by allocating a new, larger array and copying the elements from the old array to the new one. The new array is typically larger than the old one to reduce the number of times this operation needs to be performed as elements are added to the list.
-
-The specific growth strategy used by ArrayList is to increase the size of the array by a factor of 1.5. For example, if the current array has a length of 10, then a new array of length 15 will be created when more space is needed.
-
-When you add an element to an ArrayList, the ArrayList will first check if there is any room left in the current array to store the new element. If there is, the element is added to the next available position in the array. If there is no room, a new array is created with the new size and all the elements of the current array are copied to it. Then the new element is added to the end of the new array.
-
-In general, this approach of periodically increasing the size of the array to be slightly larger than the current number of elements in the list allows the ArrayList to keep the average cost of adding an element to O(1) amortized performance.
-
-**2. LinkedList:** In Java, a LinkedList is implemented as a doubly-linked list. A doubly-linked list is a data structure in which each element, called a node, contains a reference to the previous and next elements in the list. The first and last elements in the list have special nodes, called sentinels, that do not contain actual data but are used to mark the beginning and end of the list.
-
-LinkedList class provides methods to add, remove, and access elements, as well as various other utility methods such as methods to check if the list is empty, to find the index of a given element, and to sort the elements.
+5. HashSet: an implementation of a set using a hash table, allowing for fast insertion/deletion of unique elements.
+6. TreeSet: an implementation of a set using a balanced binary tree, allowing for fast insertion/deletion of unique elements in a sorted order.
+7. Vector: a legacy class similar to ArrayList, but with additional synchronization for use in multi-threaded environments.
+8. Stack: a legacy class representing a Last-In-First-Out (LIFO) stack of objects.
+9. PriorityQueue : An unbounded priority queue based on a priority heap.
+10. Deque: A linear collection that supports element insertion and removal at both ends.
