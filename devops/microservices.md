@@ -201,3 +201,24 @@ spring:
 Once the Config Server is up and running, the other microservices in your system can connect to it and retrieve their configuration by providing the application name and profile they belong to.
 
 In summary, Spring Cloud Config Server is a Spring Boot application that allows you to externalize configuration from your microservices and manage and update the configuration of all your services in one place. It can read configuration data from various sources and encrypt and decrypt sensitive configuration properties.
+
+
+# Best practices to define boundaries in microservice architecture:
+
+In microservice architecture, it is important to define clear boundaries between the different services in order to maintain a high level of cohesion and low level of coupling. Here are some best practices for defining boundaries in microservice architecture:
+
+**1. Single Responsibility Principle:** Each service should have a single, well-defined responsibility and should not be concerned with the functionality of other services.
+
+**2. Domain-Driven Design:** Use Domain-Driven Design (DDD) to model the different services based on the business domain. This helps to ensure that the services are aligned with the business requirements and makes it easier to understand the responsibilities of each service.
+
+**3. API Gateway:** Use an API Gateway to act as a single entry point for all external requests. The API Gateway can be used to handle tasks such as routing, authentication, and rate limiting, making it easier to maintain the boundaries between the services.
+
+**4. Data isolation:** Services should have their own databases and should not share data with other services. This helps to ensure that changes to one service do not affect the functionality of other services.
+
+**5. Versioning:** Use versioning for the service’s APIs. This allows for multiple versions of a service to be deployed at the same time, making it easier to maintain backwards compatibility and update the services independently.
+
+**6. Communication:** Use lightweight communication mechanisms such as HTTP/REST or gRPC to communicate between services. Avoid tightly-coupled communication mechanisms such as shared databases or in-memory data structures.
+
+**7. Monitoring and logging:** Monitor and log the services individually to make it easier to identify and troubleshoot issues. This helps to ensure that issues with one service do not affect the functionality of other services.
+
+By following these best practices, you can help to maintain clear boundaries between the services and ensure that the microservice architecture is well-structured, easy to understand, and easy to maintain.

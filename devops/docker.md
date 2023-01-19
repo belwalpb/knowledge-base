@@ -76,10 +76,13 @@ To remove orphaned Docker containers (containers that are not associated with an
 **docker images**: This command lists all images on the local system, including the image ID, repository name, and tag name. You can use the -a flag to show all images (including intermediate images), and the --format flag to specify the output format.
 
 **docker pull**: This command downloads an image from a registry (e.g., Docker Hub) to the local system. You can specify the repository and tag name of the image you want to download. For example:
+
 `docker pull ubuntu:latest`
+
 This will download the latest version of the ubuntu image from Docker Hub.
 
 **docker push**: This command uploads an image to a registry. You will need to be logged in to the registry and have permission to push to the specified repository. For example:
+
 `docker push my_username/my_image:latest`
 
 ##### Other Useful Docker Commands:
