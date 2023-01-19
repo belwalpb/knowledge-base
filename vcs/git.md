@@ -155,7 +155,7 @@ A remote in Git is a named reference to a repository on another machine. Remotes
 
 ### Some Additional Git Commands:
 
-**1. git stash:** This command is used to temporarily save changes that weour have made to your working directory, without committing them to the repository. We can then switch to a different branch, perform some other tasks, and later restore the saved changes. This can be useful when we want to switch branches without committing our changes, or when we want to save our work in progress while we work on something else.
+**1. git stash:** This command is used to temporarily save changes that we have made to our working directory, without committing them to the repository. We can then switch to a different branch, perform some other tasks, and later restore the saved changes. This can be useful when we want to switch branches without committing our changes, or when we want to save our work in progress while we work on something else.
 
 To restore stashed changes, we can use the `git stash apply` command. This will apply the changes that were saved in the most recent stash, and restore them to our working directory.
 
