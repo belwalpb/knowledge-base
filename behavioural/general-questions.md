@@ -3,7 +3,7 @@
 **1. What are your major weakness?**
 
 I am still relatively new to the Software Engineering field, and I see my lack of experience as an opportunity to learn and grow. I am always eager to take on new challenges and expand my skill set.
-One more key area, where i am improving myself is like, I have seen my seniors that whenever some tough situation comes, they handles the situation very very calmly. There is not a single sign of stress in their face ever. They very gently handles such scenarios and provides a solution for that. So I am still learning the art of working calmly and peacefully under the pressure.
+One more key area, where i am improving myself is like, I have seen my seniors that whenever some tough situation comes, they handle the situation very calmly. There is not a single sign of stress on their face ever. They very gently handle such scenarios and provide a solution. So I am still learning the art of remaining working calm and peaceful under the pressure.
 
 **2. Did you ever had a conflict with your manager and how did you handled that?**
 
