@@ -31,11 +31,16 @@ Advantages:
 
 **3. HashMap:** an implementation of a hash table, allowing for fast access and insertion/deletion of key-value pairs.
 
-4. TreeMap: an implementation of a balanced binary tree, allowing for fast access and insertion/deletion of key-value pairs in a sorted order.
+**4. TreeMap:** an implementation of a balanced binary tree, allowing for fast access and insertion/deletion of key-value pairs in a sorted order.
 
-5. HashSet: an implementation of a set using a hash table, allowing for fast insertion/deletion of unique elements.
-6. TreeSet: an implementation of a set using a balanced binary tree, allowing for fast insertion/deletion of unique elements in a sorted order.
-7. Vector: a legacy class similar to ArrayList, but with additional synchronization for use in multi-threaded environments.
-8. Stack: a legacy class representing a Last-In-First-Out (LIFO) stack of objects.
-9. PriorityQueue : An unbounded priority queue based on a priority heap.
-10. Deque: A linear collection that supports element insertion and removal at both ends.
+**5. HashSet:** an implementation of a set using a hash table, allowing for fast insertion/deletion of unique elements.
+
+**6. TreeSet:** an implementation of a set using a balanced binary tree, allowing for fast insertion/deletion of unique elements in a sorted order.
+
+**7. Vector:** A legacy class similar to ArrayList, but with additional synchronization for use in multi-threaded environments.
+
+**8. Stack:** a legacy class representing a Last-In-First-Out (LIFO) stack of objects.
+
+**9. PriorityQueue:** An unbounded priority queue based on a priority heap.
+
+**10. Deque:** A linear collection that supports element insertion and removal at both ends.

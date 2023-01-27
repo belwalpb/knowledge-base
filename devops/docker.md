@@ -19,7 +19,7 @@ Common Issues which docker resolves:
 #### Docker Image vs Docker Container:
 
 A Docker image is a lightweight, stand-alone, executable package that includes everything needed to run a piece of software, including the application code, libraries, dependencies, and runtime. It is a template for creating Docker containers.
-
+a
 A Docker container is a running instance of a Docker image. When you start a container using the docker run command, the container is created from the image and the application inside the container is executed.
 
 To summarize, a Docker image is a static snapshot of an application, while a Docker container is a running instance of that application. We can create multiple containers from a single image, each with its own separate and isolated environment for running the application.

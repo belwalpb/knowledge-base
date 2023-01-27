@@ -22,7 +22,7 @@ LinkedList class provides methods to add, remove, and access elements, as well a
 
 ## When to use ArrayList and when to use LinkedList?
 
-In Java, ArrayList and LinkedList are both classes that implement the List interface and provide the functionality of a dynamic array. However, they have different performance characteristics and are better suited to different use cases.
+In Java, ArrayList and LinkedList are both classes implements the List interface and provide the functionality of a dynamic array. However, they have different performance characteristics and are better suited to different use cases.
 
 You should use an ArrayList when:
 
