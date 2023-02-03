@@ -115,6 +115,7 @@ In general, it is recommended to use docker stop whenever possible, as it allows
 **1. How does Docker differ from a virtual machine?**
 
 A virtual machine (VM) is a software emulation of a physical computer, which runs an operating system and applications in a self-contained environment. In contrast, Docker allows you to package and run applications in containers, which share the host operating system and resources. This makes Docker more lightweight and efficient than VMs, as containers do not require a separate operating system and can be easily transferred between environments.
+https://stackoverflow.com/questions/16047306/how-is-docker-different-from-a-virtual-machine
 
 **2. How do you share and distribute Docker images?**
 
