@@ -1,0 +1,25 @@
+class Solution {
+    public int maxIceCream(int[] costs, int coins) {
+        // Sort the array of costs in ascending order
+    Arrays.sort(costs);
+    
+    // Initialize a counter for the number of ice cream bars bought
+    int iceCreamBarsBought = 0;
+    
+    // Iterate through the array of costs
+    for (int cost : costs) {
+      // If the current cost is greater than the available coins, break out of the loop
+      if (cost > coins) {
+        break;
+      }
+      
+      // Otherwise, buy the ice cream bar and subtract its cost from the available coins
+      iceCreamBarsBought++;
+      coins -= cost;
+    }
+    
+    // Return the number of ice cream bars bought
+    return iceCreamBarsBought;
+  }
+    
+}

@@ -1,0 +1,30 @@
+class MaxCount1 {
+    public static int maximumCount(int[] nums) {
+
+            if(nums[0]>0 || nums[nums.length-1]<0){
+                return nums.length;
+            }
+            int l=0,neg,pos,mid;
+            int h=nums.length-1;
+            while(l<h){
+                mid= (l+h)/2;
+                if(nums[mid]<0)
+                {
+                    l=mid+1;
+                }else{
+                    h=mid;
+                }
+            }
+            neg=l;
+            // Move l to right to exclude zeros.
+            while (l < nums.length && nums[l] == 0) l++;
+            pos = nums.length - l;
+
+            return Math.max(neg,pos);
+        }
+
+ public static void main(String args[]){
+        int[] s = new int[]{-2,-1,-1,1,2,3};
+        int a = maximumCount(s);
+ }
+}
