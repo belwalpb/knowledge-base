@@ -5,20 +5,21 @@ Docker is a tool used to deploy and run applications in containers. It allows de
 A Docker container is a lightweight executable package that includes everything needed to run an application. It is a way to package software in a standard format that can run on any infrastructure, whether it is a laptop, a physical server, or a virtual machine in the cloud.
 
 Common Issues which docker resolves:
+
 **1. Dependency conflicts and version issues:** Docker allows applications to run in a container that includes all of the necessary dependencies, which eliminates the risk of conflicts with other software or versions already available on the host machine.
 
-**Portability:** Docker containers can be easily moved between different machines and environments, making it easier to deploy and run applications in different environments.
+**2. Portability:** Docker containers can be easily moved between different machines and environments, making it easier to deploy and run applications in different environments.
 
-**Compatibility:** Docker allows applications to run on any machine that has Docker installed, regardless of the underlying operating system or system libraries.
+**3. Compatibility:** Docker allows applications to run on any machine that has Docker installed, regardless of the underlying operating system or system libraries.
 
-**Resource isolation:** Docker containers provide isolation of resources such as CPU, memory, and storage, which allows multiple applications to run on the same host machine without interference.
+**4. Resource isolation:** Docker containers provide isolation of resources such as CPU, memory, and storage, which allows multiple applications to run on the same host machine without interference.
 
-**Security:** Docker allows you to run applications in a secure environment by isolating them from the host system and other containers. This can help to prevent malicious attacks and reduce the risk of vulnerabilities in your applications.
+**5. Security:** Docker allows you to run applications in a secure environment by isolating them from the host system and other containers. This can help to prevent malicious attacks and reduce the risk of vulnerabilities in your applications.
 
 #### Docker Image vs Docker Container:
 
 A Docker image is a lightweight, stand-alone, executable package that includes everything needed to run a piece of software, including the application code, libraries, dependencies, and runtime. It is a template for creating Docker containers.
-
+a
 A Docker container is a running instance of a Docker image. When you start a container using the docker run command, the container is created from the image and the application inside the container is executed.
 
 To summarize, a Docker image is a static snapshot of an application, while a Docker container is a running instance of that application. We can create multiple containers from a single image, each with its own separate and isolated environment for running the application.
@@ -75,10 +76,13 @@ To remove orphaned Docker containers (containers that are not associated with an
 **docker images**: This command lists all images on the local system, including the image ID, repository name, and tag name. You can use the -a flag to show all images (including intermediate images), and the --format flag to specify the output format.
 
 **docker pull**: This command downloads an image from a registry (e.g., Docker Hub) to the local system. You can specify the repository and tag name of the image you want to download. For example:
+
 `docker pull ubuntu:latest`
+
 This will download the latest version of the ubuntu image from Docker Hub.
 
 **docker push**: This command uploads an image to a registry. You will need to be logged in to the registry and have permission to push to the specified repository. For example:
+
 `docker push my_username/my_image:latest`
 
 ##### Other Useful Docker Commands:
@@ -101,7 +105,7 @@ This will download the latest version of the ubuntu image from Docker Hub.
 
 **docker stop** sends a **SIGTERM** signal to the main process running inside the container, asking it to terminate gracefully. The process is then given a grace period (typically 10 seconds) to shutdown before the SIGKILL signal is sent, which forcibly terminates the process.
 
-**docker kill**, on the other hand, sends the SIGKILL signal immediately, which terminates the process without giving it a chance to shutdown gracefully.
+**docker kill**, on the other hand, sends the **SIGKILL** signal immediately, which terminates the process without giving it a chance to shutdown gracefully.
 
 In general, it is recommended to use docker stop whenever possible, as it allows the process inside the container to clean up any resources or save its state before shutting down. However, docker kill can be useful in cases where the process inside the container is not responding to the SIGTERM signal.
 
@@ -111,6 +115,7 @@ In general, it is recommended to use docker stop whenever possible, as it allows
 **1. How does Docker differ from a virtual machine?**
 
 A virtual machine (VM) is a software emulation of a physical computer, which runs an operating system and applications in a self-contained environment. In contrast, Docker allows you to package and run applications in containers, which share the host operating system and resources. This makes Docker more lightweight and efficient than VMs, as containers do not require a separate operating system and can be easily transferred between environments.
+https://stackoverflow.com/questions/16047306/how-is-docker-different-from-a-virtual-machine
 
 **2. How do you share and distribute Docker images?**
 

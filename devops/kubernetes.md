@@ -30,7 +30,7 @@ To summarize, a Kubernetes cluster is a set of nodes that are used to run contai
 
 ### Questions
 
-**1. Difference Between Service & Deployment?**
+**1. Difference Between Service & Deployment?** 
 
 A service is used to expose a group of pods and route traffic to them, while a deployment is used to manage and update the replicas of a pod.
 
