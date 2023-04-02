@@ -1,0 +1,17 @@
+server:
+  port : 8080
+
+spring:
+  datasource:
+    url: jdbc:mysql://database-1.cimedsmboein.ap-south-1.rds.amazonaws.com:3306/bookstore?useSSL=false&serverTimezone=UTC
+    username: bookstore-adm-user
+    password: bookstore@123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
