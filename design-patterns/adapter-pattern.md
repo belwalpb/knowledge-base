@@ -62,7 +62,8 @@ A common use case is when you're trying to integrate a legacy code base with a n
 So in the adapter pattern, there's a Target class that a Client uses and an Adaptee class that needs to be adapted to be used. In other languages which support multiple inheritance, the adapter uses multiple inheritance to get the functionality of both classes and adapt one to another. The problem is that in Java, you could not extend from two classes. There is no multiple inheritance of classes.
 ![image](https://user-images.githubusercontent.com/61246444/231216842-4a7f4c41-5a06-41ac-84a5-33e0cfeecfb4.png)
 
-The only difference is that with this approach, we use composition to delegate request to the adaptee. Here's an example.![image](https://user-images.githubusercontent.com/61246444/231216874-ca7c0de2-44ac-4f5a-8688-7750832c50ae.png)
+The only difference is that with this approach, we use composition to delegate request to the adaptee. 
+![image](https://user-images.githubusercontent.com/61246444/231217677-9f7c4f6c-b026-4afc-8f2a-7d5fba249814.png)
 
 Let's suppose we have an interface to play all the audio files. And now that Video support has been added, we want to play the audio part of a video without making changes to the client.
 ![image](https://user-images.githubusercontent.com/61246444/231216897-527946ee-cb38-49de-8e2d-cbe2d91e6cf4.png)
@@ -84,16 +85,11 @@ Public class VideoAdapter implements Audio{
 		//..
 	}
 }
-![image](https://user-images.githubusercontent.com/61246444/231216938-fb8c4cfd-bc89-44f8-90b4-ccdf20a37099.png)
 
 The adapter has an adaptee(Video here) and delegates to adaptee, so it is by composition.
 
 If still not understood check this video:
-![image](https://user-images.githubusercontent.com/61246444/231216988-7db0e233-b952-4e95-8993-1f1a58390d9d.png)
-
-If still not understood check this video:
-Adapter Pattern – Design Patterns (ep 8)![image](https://user-images.githubusercontent.com/61246444/231217082-cdd96008-f7d0-4d0e-b478-dd9629c1ca54.png)
-
+https://www.youtube.com/watch?v=2PKQtcJjYvc&list=PLrhzvIcii6GNjpARdnO4ueTUAVR9eMBpc&index=8
 
 
 
